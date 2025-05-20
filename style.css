@@ -1,0 +1,25 @@
+.Carousel-container {
+  position: relative;
+}
+
+#btn {
+  margin-bottom: 6px;
+  height: 30px;
+  width: 80px;
+}
+
+#carousel {
+  overflow: hidden;
+  width: 70%;
+  height: 10%;
+}
+
+#carousel img {
+  position: absolute;
+  display: block;
+  height: 400px;
+  width: 50%;
+  object-fit: cover;
+}
+
+/*# sourceMappingURL=style.css.map */
