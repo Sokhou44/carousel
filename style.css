@@ -1,25 +1,30 @@
-.Carousel-container {
+.carousel-container {
+  width: 500px;
+  margin: 50px auto;
   position: relative;
+  text-align: center;
+  border: 2px solid #ccc;
+  padding: 20px;
+  border-radius: 10px;
 }
 
 #btn {
-  margin-bottom: 6px;
-  height: 30px;
-  width: 80px;
+  margin-bottom: 15px;
+  font-size: 18px;
+  cursor: pointer;
 }
 
-#carousel {
-  overflow: hidden;
-  width: 70%;
-  height: 10%;
+.carousel img {
+  display: none;
+  width: 100%;
+  border-radius: 8px;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
 }
 
-#carousel img {
-  position: absolute;
+.carousel img.actif {
   display: block;
-  height: 400px;
-  width: 50%;
-  object-fit: cover;
+  opacity: 1;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,26 +1,13 @@
-.Carousel-container {
-    position: relative;
-    // height: 100%;
-    // width: 50%;
-}
 
-#btn {
-margin-bottom: 6px;
-height: 30px;
-width: 80px;
-}
+  .carousel img {
+    display: none;
+    width: 100%;
+    border-radius: 8px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
 
-
-#carousel {
-    overflow: hidden;
-    width: 70%;
-    height: 10%;   
-}
-
-#carousel img {
-    position: absolute;
+  .carousel img.actif {
     display: block;
-    height: 400px;
-    width: 50%;
-   object-fit: cover;
-}
+    opacity: 1;
+  }
