@@ -1,28 +1,46 @@
 .carousel-container {
-  width: 500px;
+  display: flex;
+  flex-direction: column;
+  width: 700px;
+  height: 500px;
   margin: 50px auto;
   position: relative;
   text-align: center;
   border: 2px solid #ccc;
-  padding: 20px;
+  padding: 10px;
   border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-
-#btn {
-  margin-bottom: 15px;
+.carousel-container button#btn {
+  order: 2;
+  width: 50%;
+  margin: 15px auto 0 auto;
+  margin-top: 12px;
+  margin-bottom: 5px;
+  padding: 10px 25px;
   font-size: 18px;
   cursor: pointer;
+  border: none;
+  background-color: purple;
+  color: white;
+  border-radius: 5px;
 }
-
-.carousel img {
-  display: none;
-  width: 100%;
+.carousel-container .carousel {
+  position: relative;
+  height: 420px;
+  overflow: hidden;
   border-radius: 8px;
+}
+.carousel-container .carousel img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  display: none;
   opacity: 0;
   transition: opacity 0.5s ease-in-out;
+  border-radius: 8px;
 }
-
-.carousel img.actif {
+.carousel-container .carousel img.actif {
   display: block;
   opacity: 1;
 }
